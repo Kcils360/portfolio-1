@@ -2,11 +2,107 @@
 ***** BASE *****
 ###############*/
 
+* {
+  /*outline: 1px solid red;*/
+  /*box-sizing: border-box;*/
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 /*###############
 **** LAYOUT ****
 ###############*/
 
+
+/*GENERAL*/
+
+nav, main section, footer section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/*HEADER*/
+
+header {
+  background: url('http://via.placeholder.com/1000x500/000?text=main_image') no-repeat center;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  height: 300px;
+}
+
+h1 {
+  font-size: 1.3em;
+  padding: 20px;
+}
+
+nav {}
+
+nav ul {}
+
+#burger {
+  float: right;
+}
+
+nav a {
+  color: white;
+  padding: 20px;
+}
+
+nav li {
+  padding: 20px;
+}
+
+
+/*MAIN*/
+
+main {
+  clear: both;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+main li {
+  display: inline-block;
+}
+
+
+/*FOOTER*/
+
+footer section {
+  text-align: center;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  #burger {
+    display: none
+  }
+  header {
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0
+  }
+  nav ul {
+    float: right;
+  }
+  nav li {
+    display: inline-block;
+  }
+}
 
 
 /*###############
