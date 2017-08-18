@@ -1,15 +1,39 @@
-/*###############
-***** BASE *****
-###############*/
+* {
+  outline: 1px solid red;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
+.carousel {
+  max-width: 960px;
+  height: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
 
-/*###############
-**** LAYOUT ****
-###############*/
+.carousel img {
+  display: none;
+}
 
+.ca-left, .ca-right {
+  font-size: 8em;
+  position: absolute;
+  top: 0;
+  padding:26% 30%;
+  cursor: pointer;
+}
 
+.ca-left {
+  left: 0;
+  padding-left: 20px;
 
-/*###############
-**** MODULES ****
-###############*/
+}
+
+.ca-right {
+  right: 0;
+  padding-right: 20px;
+}
