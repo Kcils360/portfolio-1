@@ -26,9 +26,14 @@ Carousel.toHTML = function() {
 };
 
 Carousel.navigation = function() {
-
+  var prevIndex = 0;
+  var currIndex = 0;
   $('.carousel').on('click', '.ca-button', function() {
-    console.log($(this));
+
+    currIndex++;
+    console.log(currIndex);
+
+
   });
 };
 
